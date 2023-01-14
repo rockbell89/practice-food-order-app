@@ -19,10 +19,7 @@ const backdropElement = document.getElementById("overlay");
 const Modal = (props) => {
   return (
     <>
-      {ReactDOM.createPortal(
-        <BackDrop hideCartHandler={props.hideCartHandler}></BackDrop>,
-        backdropElement
-      )}
+      {ReactDOM.createPortal(<BackDrop {...props}></BackDrop>, backdropElement)}
       {ReactDOM.createPortal(
         <ModalOverlay>{props.children}</ModalOverlay>,
         backdropElement

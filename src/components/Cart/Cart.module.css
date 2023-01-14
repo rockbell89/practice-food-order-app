@@ -36,6 +36,12 @@
   color: white;
 }
 
+.actions button:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
 .actions .button--alt {
   color: #8a2b06;
 }
